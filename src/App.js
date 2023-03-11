@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { Blurhash } from "react-blurhash";
+
 import './App.css';
 
 function App() {
+  console.log(window.screen.width);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Blurhash
+        hash="LeG+grRiXAxt?wM{t7oyW@ofM{WB"
+        width={window.screen.width}
+        height={300}
+        resolutionX={32}
+        resolutionY={32}
+        punch={1}
+      />
     </div>
   );
 }
